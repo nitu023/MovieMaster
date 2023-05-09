@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300,400,600&display=swap');
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Shantell Sans', cursive;
+  scroll-behavior: smooth;
+}
+
+.app{
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.pageTitle{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: .4rem;
+}

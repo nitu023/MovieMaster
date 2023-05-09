@@ -1,0 +1,22 @@
+.bottomNav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.MuiBottomNavigation-root{
+    background-color: #1b1b1b !important;
+}
+
+.MuiBottomNavigationAction-label , .MuiSvgIcon-root{
+    color: #fff;
+}
+
+.Mui-selected .MuiBottomNavigationAction-label ,
+.Mui-selected  .MuiSvgIcon-root{
+    color: #6a8cfa;
+}

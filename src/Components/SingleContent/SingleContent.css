@@ -1,0 +1,32 @@
+.singleContainer{
+    display: flex;
+    flex-direction: column;
+     width: 250px;
+     padding: .3rem;
+     margin: .5rem .7rem;
+     background-color: #181818;
+     border-radius: .4rem;
+    /* position: relative; */
+    color: #fff;
+    /* margin-bottom: 4rem; */
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+
+.singleContainer:hover{
+    background-color: #383838;
+    color: #ffffff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* .poster {
+    height: 300px;
+} */
+
+.subtitles{
+    display: flex;
+    justify-content: space-around;
+}
