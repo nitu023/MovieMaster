@@ -36,12 +36,14 @@ const Movies = () => {
     <>
       <div className="movies">
         <div className="pageTitle" >Movies</div>
-        <Genres type ="movie"  selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} genres={genres} setGenres={setGenres} setPage={setPage} />
-        {
-          content && content.map((item) => {
-            return < SingleContent id={item.id} poster={item.poster_path} key={item.id} title={item.title || item.name} date={item.release_date || item.first_air_date} media_type={item.media_type} vote_avg={item.vote_average} />
-          })
-        }
+        <Genres type ="movie"  selectedGenres={selectedGenres} 
+        setSelectedGenres={setSelectedGenres} 
+        genres={genres} 
+        setGenres={setGenres} 
+        setPage={setPage} 
+        />
+      
+      < SingleContent trendingDatas ={content}  />
     {
       totalPages > 1 &&
         <CustomPagination setPage={setPage} totalPages={totalPages} />

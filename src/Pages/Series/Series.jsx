@@ -37,11 +37,9 @@ const Series = () => {
       <div className="series">
         <div className="pageTitle" >TV Series</div>
         <Genres type ="tv"  selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} genres={genres} setGenres={setGenres} setPage={setPage} />
-        {
-          content && content.map((item) => {
-            return < SingleContent id={item.id} poster={item.poster_path} key={item.id} title={item.title || item.name} date={item.release_date || item.first_air_date} media_type={'tv'} vote_avg={item.vote_average} />
-          })
-        }
+       <SingleContent trendingDatas={content} />
+          
+      
     {
       totalPages>1 &&
         <CustomPagination setPage={setPage} totalPages={totalPages} />

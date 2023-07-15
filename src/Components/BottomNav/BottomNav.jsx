@@ -31,7 +31,7 @@ const BottomNav = () => {
                         setValue(newValue);
                     }}
                 >
-                    <BottomNavigationAction  label="Trending" icon={<WhatshotIcon  />} />
+                    <BottomNavigationAction  label="Trending" color="secondary" icon={<WhatshotIcon  />} />
                     <BottomNavigationAction label="Movies" icon={<MovieIcon />} />
                     <BottomNavigationAction label="TV Series" icon={<TvIcon />} />
                     <BottomNavigationAction label="Search" icon={<SearchIcon />} />

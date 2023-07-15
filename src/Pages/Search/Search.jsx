@@ -36,7 +36,7 @@ const Search = () => {
     <div className="subTitle">
       <div className="search">
         <TextField
-          style={{ width: '70%' }}
+          style={{ width: '50%', backgroundColor: 'white' }}
           className="search"
           label="Search"
           variant="filled"
@@ -60,11 +60,7 @@ const Search = () => {
         </Tabs>
 
        <div className="resut">
-       {
-          content && content.map((item) => {
-            return < SingleContent id={item.id} poster={item.poster_path} key={item.id} title={item.title || item.name} date={item.release_date || item.first_air_date} media_type={type?'tv' : 'movie'} vote_avg={item.vote_average} />
-          })
-        }
+       < SingleContent trendingDatas ={content} />
 
         {
           searchText && !content &&
@@ -82,4 +78,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default Search;

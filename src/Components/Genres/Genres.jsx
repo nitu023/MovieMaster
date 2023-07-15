@@ -17,7 +17,6 @@ const Genres = ({type, selectedGenres, setSelectedGenres ,genres,setGenres , set
 
     const handleRemove= (gen)=>{
         setSelectedGenres(selectedGenres.filter((selected)=>{return selected.id !== gen.id}))
-
         setGenres([...genres, gen])
         setPage(1)
     }

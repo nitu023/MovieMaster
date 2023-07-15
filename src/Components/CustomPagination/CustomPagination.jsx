@@ -11,8 +11,7 @@ const CustomPagination = ({setPage, totalPages}) => {
 
   return (
     <div className='customPagination'>
-          <Pagination count={totalPages} onChange={(e)=>{
-            console.log(e.target.textContent);
+          <Pagination count={totalPages} color="primary" onChange={(e)=>{
             handlePageChange(e.target.textContent)
           }} />
         
