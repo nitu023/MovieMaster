@@ -18,6 +18,8 @@ const Trending = () => {
     setTotalPages(data.total_pages)
   }
 
+
+  
   useEffect(() => {
     fetchTrending()
   }, [page])
